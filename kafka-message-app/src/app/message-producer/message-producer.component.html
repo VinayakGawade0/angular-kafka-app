@@ -1,0 +1,29 @@
+<div class="form-container">
+  <h2>Kafka Message Producer</h2>
+
+  <form>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="messageData.name"
+      placeholder="Name"
+      required
+      ngModel
+    />
+
+    <textarea
+      name="message"
+      [(ngModel)]="messageData.message"
+      placeholder="Message"
+      required
+      ngModel
+    ></textarea>
+
+    <div class="button-group">
+      <button type="button" (click)="sendToProduce()">Send to /produce</button>
+      <button type="button" (click)="sendToPublish()">Send to /publish</button>
+    </div>
+  </form>
+
+  <p *ngIf="responseMessage">{{ responseMessage }}</p>
+</div>
