@@ -34,4 +34,6 @@ Visit: [http://localhost:4200](http://localhost:4200)
 
 ---
 
-MIT License @ Vinayak Gawade
+## 📝 License
+
+This project is licensed under the MIT License © Vinayak Gawade.
